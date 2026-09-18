@@ -1,5 +1,5 @@
 """
-Netflix Content Strategy Dashboard — Streamlit
+Netflix Content Strategy Dashboard - Streamlit
 Run with:  streamlit run app.py
 """
 
@@ -102,7 +102,7 @@ st.markdown(
             Content Strategy Dashboard
         </div>
         <div style="color:{INK_DIM}; font-size:14px; margin-top:4px;">
-            What's actually in the catalog — the movie/series balance, where content comes from,
+            What's actually in the catalog - the movie/series balance, where content comes from,
             what it's rated, and how the library has grown.
         </div>
     </div>
@@ -111,7 +111,7 @@ st.markdown(
 )
 
 if filtered.empty:
-    st.warning("No titles match the current filters — widen the release-year range or content type.")
+    st.warning("No titles match the current filters - widen the release-year range or content type.")
     st.stop()
 
 # ------------------------------------------------------------------ KPIs --
@@ -205,7 +205,7 @@ c3, c4 = st.columns(2)
 
 with c3:
     st.subheader("Top content-producing countries")
-    st.caption("By production-country credit — a title can list more than one.")
+    st.caption("By production-country credit - a title can list more than one.")
     top_countries = (
         explode_country(filtered)["country"].value_counts().head(top_n).sort_values()
     )
@@ -265,11 +265,11 @@ with i1:
         **Is Netflix more focused on movies or TV shows?**
         Movies still lead at 69% of titles (5,377 vs. 2,410), but TV shows'
         share of *yearly additions* rose from under 20% in 2013–15 to over 40%
-        by 2020 — the library is tilting toward series even though movies
+        by 2020 - the library is tilting toward series even though movies
         remain the majority.
 
         **Which countries produce the most content?**
-        The United States dominates with ~3,300 production credits — more
+        The United States dominates with ~3,300 production credits - more
         than 3x India (990) and the UK (723), the next two. A long tail of
         100+ countries beyond that shows a globally-sourced but US-anchored
         catalog.
@@ -280,7 +280,7 @@ with i2:
         f"""
         **Which genres dominate the platform?**
         International Movies, Dramas, and Comedies are the three largest tags
-        by a wide margin, together covering roughly 40% of all genre tags —
+        by a wide margin, together covering roughly 40% of all genre tags -
         the catalog leans narrative/drama over niche genres.
 
         **How has the content library evolved?**

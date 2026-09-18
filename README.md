@@ -1,4 +1,4 @@
-# Netflix Content Strategy Dashboard — Streamlit
+# Netflix Content Strategy Dashboard using Streamlit
 
 An interactive version of the dashboard, built with Streamlit + Plotly on the
 public Netflix titles dataset (7,787 titles, 2021 snapshot).
@@ -21,21 +21,21 @@ Opens automatically at `http://localhost:8501`.
 
 ## What's inside
 
-- **Sidebar filters** — content type, release-year range, and top-N for the
+- **Sidebar filters** - content type, release-year range, and top-N for the
   country/genre charts. Every chart and KPI reacts live except the Key
   Takeaways panel, which is written against the full catalog on purpose.
-- **KPI row** — movie/show counts, countries represented, genre tags in use.
-- **Six charts** — content added by year, movie/show split, top
+- **KPI row** - movie/show counts, countries represented, genre tags in use.
+- **Six charts** - content added by year, movie/show split, top
   content-producing countries, genre distribution, rating breakdown,
   release-year trend.
-- **Download button** — export the currently-filtered rows as CSV.
+- **Download button** - export the currently-filtered rows as CSV.
 - **Netflix-themed dark palette**, set in `.streamlit/config.toml`.
 
 ## Deploying it
 
 `streamlit run app.py` is for local use. To share a live link, push this
 folder to a GitHub repo and deploy free on
-[Streamlit Community Cloud](https://streamlit.io/cloud) — point it at
+[Streamlit Community Cloud](https://streamlit.io/cloud) - point it at
 `app.py`, it auto-installs `requirements.txt`.
 
 ## Files
